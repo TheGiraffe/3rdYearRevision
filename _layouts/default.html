@@ -9,12 +9,7 @@
       border:none;
       text-decoration: underline;
       list-style-type: circle;
-    }
-    .tblofcontents li header{
-      background:none;
-      border:none;
-      text-decoration: underline;
-      list-style-type: circle;
+      display: block;
     }
     </style>
 
@@ -32,9 +27,11 @@
       <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-        <p>Contents: <br><ul class = "tblofcontents">
-          <li><a href="#link">Put a page link here</a></li>
-        </ul></p>
+        <p>
+          <div class = tblofcontents><a href = "#link">Link</div>
+            <div class = tblofcontents><a href = "#link">Link</div>
+              <div class = tblofcontents><a href = "#link">Link</div>
+        </p>
 
         <ul>
           {% if site.show_downloads %}
