@@ -8,7 +8,13 @@
       background-color:none;
       border:none;
       text-decoration: underline;
-      list-style: circle;
+      list-style-type: circle;
+    }
+    .tblofcontents li{
+      background-color:none;
+      border:none;
+      text-decoration: underline;
+      list-style-type: circle;
     }
     </style>
 
@@ -26,8 +32,8 @@
       <header>
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-        <ul>
-          <li class = "tblofcontents"><a href="#link">Put a page link here</a></li>
+        <ul class = "tblofcontents">
+          <li><a href="#link">Put a page link here</a></li>
         </ul>
 
         <ul>
