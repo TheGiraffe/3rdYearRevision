@@ -2,3 +2,6 @@ theme: jekyll-theme-dinky
 
 title: [3rd Year Revision]
 description : [My revision notes for 3rd year]
+
+plugins:
+  - jemoji
